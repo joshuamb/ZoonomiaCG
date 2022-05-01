@@ -3,4 +3,10 @@ LINC01572:1 chr16 142872 LINC02541:41 chr6 32667 CCND2-AS1:4 chr12 26684 lnc-CD4
 lnc-DYDC1-2:2 chr10 24689 Solenodon_paradoxus 2891 9938
 lnc-KLHL32-1:1 chr6 10685 Solenodon_paradoxus 749 3503
 lnc-ARRDC4-7:1 chr15 3512 Solenodon_paradoxus 743 2625
-lnc-ABRA-4:2 chr8 437 LINC02098:8 chr11 29997 lnc-PDLIM1-1:3 chr10 2231 lnc-EXOC2-21:6 chr6 22450 LINC00970:1 chr1 183101 lnc-SP3-12:1 chr2 3947 lnc-GADD45G-4:3 chr9 3770 
+lnc-ABRA-4:2 chr8 437 LINC02098:8 chr11 29997 lnc-PDLIM1-1:3 chr10 2231 lnc-EXOC2-21:6 chr6 22450 LINC00970:1 chr1 183101 lnc-SP3-12:1 chr2 3947 lnc-GADD45G-4:3 chr9 3770 lnc-ECI2-32:1 chr6 278930 lnc-ENPP1-6:2 chr6 8694 lnc-KLF15-2:4 chr3 5821 lnc-SLC20A1-3:1 chr2 363 Solenodon_paradoxus 72 296
+LINC00973:3 chr3 17311 lnc-MPP6-4:2 chr7 586 Solenodon_paradoxus 0 0
+lnc-PRB1-1:7 chr12 4891 lnc-ZNF98-8:1 chr19 892 lnc-NR3C1-3:2 chr5 2835 Solenodon_paradoxus 706 1930
+lnc-SCRN3-1:6 chr2 769 Solenodon_paradoxus 125 398
+LINC01607:7 chr8 19344 Solenodon_paradoxus 2528 8909
+LINC00523:4 chr14 4687 lnc-KCNJ14-3:1 chr19 954 Solenodon_paradoxus 0 0
+lnc-CRB2-3:1 chr9 236 LUCAT1:1 chr5 13209 lnc-RPS24-3:7 chr10 146217 LINC00663:1 chr19 1496 

@@ -1,0 +1,9 @@
+
+lnc-batch10baboon
+total len:48814
+total aligned:76782
+total non-SNPs:76782
+total SNPs:0
+percent aligned:1.57295
+percent SNPs of aligned:0
+

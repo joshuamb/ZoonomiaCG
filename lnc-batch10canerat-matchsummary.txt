@@ -1,0 +1,9 @@
+
+lnc-batch10canerat
+total len:10566
+total aligned:12521
+total non-SNPs:12521
+total SNPs:0
+percent aligned:1.18503
+percent SNPs of aligned:0
+

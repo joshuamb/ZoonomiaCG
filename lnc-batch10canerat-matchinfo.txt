@@ -1,2 +1,5 @@
 name chromosomes length genome SNPs aligned
-lnc-FOXQ1-23:1 chr6 4163 
+lnc-FOXQ1-23:1 chr6 4163 lnc-CSNK1A1-1:3 chr5 4425 Thryonomys_swinderianus 0 0
+ERI3-IT1:6 chr1 866 Thryonomys_swinderianus 0 0
+GAS1RR:8 chr9 2186 SRP14-AS1:22 chr15 5956 lnc-HOXB4-1:1 chr17 2630 Thryonomys_swinderianus 0 0
+KCTD21-AS1:17 chr11 3351 lnc-CARD6-5:1 chr5 2140 lnc-AKIRIN1-10:1 chr1 231 lnc-RC3H1-1:16 chr1 37620 
