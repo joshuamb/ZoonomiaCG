@@ -12,4 +12,8 @@ LINC00523:4 chr14 4687 lnc-KCNJ14-3:1 chr19 954 Solenodon_paradoxus 0 0
 lnc-CRB2-3:1 chr9 236 LUCAT1:1 chr5 13209 lnc-RPS24-3:7 chr10 146217 LINC00663:1 chr19 1496 lnc-POLR1E-2:2 chr9 20593 lnc-KCTD16-3:1 chr5 849 Solenodon_paradoxus 0 0
 lnc-ZNF813-1:6 chr19 986 Solenodon_paradoxus 0 0
 BAALC-AS1:7 chr8 32352 lnc-FAM170B-2:1 chr10 209 Solenodon_paradoxus 0 0
-lnc-SKP2-4:1 chr5 1584 
+lnc-SKP2-4:1 chr5 1584 LY86-AS1:4 chr6 276280 lnc-DAPK3-1:1 chr19 1374 lnc-FOXQ1-8:2 chr6 3279 lnc-TRIM16-1:6 chr17 7127 lnc-TMEM88B-3:5 chr1 1628 Solenodon_paradoxus 0 0
+lnc-RWDD3-5:1 chr1 4570 lnc-CTBS-4:4 chr1 8786 lnc-GAPVD1-3:7 chr9 12453 lnc-SIK3-2:1 chr11 301 lnc-HIST1H2BJ-5:1 chr6 27697 EP300-AS1:20 chr22 12288 lnc-SCP2D1-1:8 chr20 1539 NUP50-DT:29 chr22 30037 lnc-LLPH-23:2 chr12 1326 LINC00882:28 chr3 3776 lnc-CERKL-3:5 chr2 3453 lnc-RANBP9-2:1 chr6 2142 lnc-NDUFV2-1:5 chr18 17404 lnc-LRRC7-19:1 chr1 49549 lnc-GSDME-3:7 chr7 59058 lnc-LIPG-13:2 chr18 421 Solenodon_paradoxus 0 0
+lnc-POTED-14:1 chr21 4868 lnc-USP28-1:1 chr11 1299 LMCD1-AS1:7 chr3 546960 lnc-DCBLD1-2:1 chr6 852 lnc-CCDC166-1:1 chr8 1184 Solenodon_paradoxus 0 0
+lnc-RGCC-1:2 chr13 1135 lnc-ATXN10-2:1 chr22 699 VIPR1-AS1:1 chr3 1238 MIR194-2HG:1 chr11 2024 LINC02428:23 chr4 29152 lnc-POTEM-3:2 chr14 31357 lnc-HOXB2-1:2 chr17 1038 Solenodon_paradoxus 0 0
+lnc-CENPJ-8:2 chr13 16664 lnc-HK2-2:1 chr2 616 lnc-USP32-2:3 chr17 1577 

@@ -17,6 +17,9 @@ mkdir $SAMPLENAME-out
 #useful for testing purposes so script runs quickly:
 #awk '{print $3-$2 " " $4 " " $1 " " $2 " " $3-$2}' $UTRorLNC.bed | sort -n | head -n $NUMSAMPLES | awk '{print $2 " " $3 " " $4 " " $5}' > $SAMPLENAME-shortsample.txt
 
+#find average lengths of UTR and lac
+#awk '{totallength+=$3-$2; number+=1} END{print "UTR   : " number " regions of avg. len " totallength/number}' UTR.bed && awk '{totallength+=$3-$2; number+=1} END{print "lncRNA: " number " regions of avg. len " totallength/number}' lnc.bed
+
 #actual sampling of the data
 awk '{print $4 " " $1 " " $2 " " $3-$2}' $UTRorLNC.bed | shuf | head -n $NUMSAMPLES > $SAMPLENAME-sample.txt
 
