@@ -9,4 +9,7 @@ lnc-PRB1-1:7 chr12 4891 lnc-ZNF98-8:1 chr19 892 lnc-NR3C1-3:2 chr5 2835 Solenodo
 lnc-SCRN3-1:6 chr2 769 Solenodon_paradoxus 125 398
 LINC01607:7 chr8 19344 Solenodon_paradoxus 2528 8909
 LINC00523:4 chr14 4687 lnc-KCNJ14-3:1 chr19 954 Solenodon_paradoxus 0 0
-lnc-CRB2-3:1 chr9 236 LUCAT1:1 chr5 13209 lnc-RPS24-3:7 chr10 146217 LINC00663:1 chr19 1496 
+lnc-CRB2-3:1 chr9 236 LUCAT1:1 chr5 13209 lnc-RPS24-3:7 chr10 146217 LINC00663:1 chr19 1496 lnc-POLR1E-2:2 chr9 20593 lnc-KCTD16-3:1 chr5 849 Solenodon_paradoxus 0 0
+lnc-ZNF813-1:6 chr19 986 Solenodon_paradoxus 0 0
+BAALC-AS1:7 chr8 32352 lnc-FAM170B-2:1 chr10 209 Solenodon_paradoxus 0 0
+lnc-SKP2-4:1 chr5 1584 
