@@ -1,0 +1,9 @@
+
+lnc-batch100
+total len:197359
+total aligned:166852
+total non-SNPs:160874
+total SNPs:5978
+percent aligned:0.845424
+percent SNPs of aligned:0.0358282
+

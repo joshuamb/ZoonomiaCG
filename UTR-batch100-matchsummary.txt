@@ -1,0 +1,9 @@
+
+UTR-batch100
+total len:7960
+total aligned:2877
+total non-SNPs:2551
+total SNPs:326
+percent aligned:0.361432
+percent SNPs of aligned:0.113312
+
