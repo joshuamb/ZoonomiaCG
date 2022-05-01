@@ -31,7 +31,8 @@ awk -v SAMPLENAME=$SAMPLENAME '{totalSNPs+=$5; totalMatches+=$6; totallen+=$3} E
 
 cat $SAMPLENAME-matchsummary.txt;
 
-echo "Homo_sapiens Solenodon_paradoxus" > $SAMPLENAME-final_sequences.txt
+echo "Homo_sapiens Solenodon_paradoxus" > $SAMPLENAME-final_sequences_with_gaps.txt
 cat $SAMPLENAME-out/* | grep -v refSequence | tr [:lower:] [:upper:] | awk '{print $3 " " $4}' >> $SAMPLENAME-final_sequences_with_gaps.txt
 
-grep "\w \w" $SAMPLENAME-final_sequences_with_gaps.txt > $SAMPLENAME-final_sequences.txt
+echo "Homo_sapiens Solenodon_paradoxus" > $SAMPLENAME-final_sequences.txt
+grep "\w \w" $SAMPLENAME-final_sequences_with_gaps.txt | grep -v N >> $SAMPLENAME-final_sequences.txt
