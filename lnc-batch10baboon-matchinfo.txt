@@ -1,0 +1,4 @@
+name chromosomes length genome SNPs aligned
+lnc-COX7A2L-4:2 chr2 26994 lnc-CAPZA2-2:8 chr7 5919 lnc-TP53BP2-8:7 chr1 1558 lnc-PYDC2-1:3 chr3 33033 Nomascus_leucogenys 0 0
+lnc-TUBB8P12-3:1 chr18 1734 lnc-ZFAND4-1:2 chr10 41380 lnc-SNPH-6:2 chr20 5982 Nomascus_leucogenys 0 0
+lnc-FZD10-6:1 chr12 20086 GRID1-AS1:2 chr10 29483 lnc-S100A13-2:12 chr1 6871 

@@ -1,0 +1,2 @@
+name chromosomes length genome SNPs aligned
+NR_146767_utr5_11_0_chr1_150344162_f chr1 100 NM_001346875_utr5_5_0_chr14_24141438_r chr14 154 

@@ -1,7 +1,8 @@
 #script.sh
 
-if [ $# -ne 3 ]; then
-    echo "usage: $0 <UTR or lnc> <batch name> <number of samples>"
+if [ $# -ne 4 ]; then
+    echo "usage: $0 <UTR or lnc> <batch name> <number of samples> <target genome>"
+    echo "eg: $0 UTR batch101 101 Solenodon_paradoxus"
     exit 1
 fi
 
@@ -9,6 +10,7 @@ UTRorLNC=$1
 SAMPLENAME="$1-$2"
 NUMSAMPLES="$3"
 echo $SAMPLENAME " drawing $3 " samples
+TARGETGENOME="$4"
 
 mkdir $SAMPLENAME-out
 
@@ -23,7 +25,7 @@ echo "name chromosomes length genome SNPs aligned" > $SAMPLENAME-matchinfo.txt
 cat $SAMPLENAME-sample.txt | while read line;
 do set $line;
 echo -n "$1 $2 $4 " >> $SAMPLENAME-matchinfo.txt;
-halSnps --tsv "$SAMPLENAME-out/$2$1.tsv" --minSpeciesForSnp 0 --start $3 --length $4 241-mammalian-2020v2.hal Homo_sapiens Solenodon_paradoxus >> $SAMPLENAME-matchinfo.txt;
+halSnps --tsv "$SAMPLENAME-out/$2$1.tsv" --minSpeciesForSnp 0 --start $3 --length $4 241-mammalian-2020v2.hal Homo_sapiens $TARGETGENOME >> $SAMPLENAME-matchinfo.txt;
 done
 
 
@@ -33,5 +35,5 @@ cat $SAMPLENAME-matchsummary.txt;
 
 cat $SAMPLENAME-out/* | grep -v refSequence | tr [:lower:] [:upper:] | awk '{print $3 " " $4}' >> $SAMPLENAME-final_sequences_with_gaps.txt
 
-echo "Homo_sapiens Solenodon_paradoxus" > $SAMPLENAME-final_sequences.txt
+echo "Homo_sapiens $TARGETGENOME" > $SAMPLENAME-final_sequences.txt
 grep "\w \w" $SAMPLENAME-final_sequences_with_gaps.txt | grep -v N >> $SAMPLENAME-final_sequences.txt

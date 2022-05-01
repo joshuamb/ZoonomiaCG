@@ -1,0 +1,9 @@
+
+UTR-batch10baboon
+total len:601
+total aligned:221
+total non-SNPs:219
+total SNPs:2
+percent aligned:0.36772
+percent SNPs of aligned:0.00904977
+

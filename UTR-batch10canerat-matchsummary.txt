@@ -1,0 +1,9 @@
+
+UTR-batch10canerat
+total len:42
+total aligned:131
+total non-SNPs:131
+total SNPs:0
+percent aligned:3.11905
+percent SNPs of aligned:0
+

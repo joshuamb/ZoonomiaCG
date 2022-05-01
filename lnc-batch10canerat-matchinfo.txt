@@ -1,0 +1,2 @@
+name chromosomes length genome SNPs aligned
+lnc-FOXQ1-23:1 chr6 4163 
