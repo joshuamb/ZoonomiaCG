@@ -1,0 +1,4 @@
+name chromosomes length genome SNPs aligned
+lnc-MYO6-1:1 chr6 2460 lnc-NCK2-1:1 chr2 1284 lnc-GRM1-10:1 chr6 476 LINC02109:50 chr5 18911 LINC00853:1 chr1 1826 Solenodon_paradoxus 7 16
+TUG1:36 chr22 3861 FRG1-DT:20 chr4 21145 Solenodon_paradoxus 0 0
+lnc-ELK4-1:1 chr1 3174 lnc-SPDYE6-4:2 chr7 2273 LINC01676:25 chr1 16782 
