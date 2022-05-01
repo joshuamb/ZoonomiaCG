@@ -8,7 +8,7 @@ fi
 UTRorLNC=$1
 SAMPLENAME="$1-$2"
 NUMSAMPLES="$3"
-echo $SAMPLENAME " drawing from $3 " samples
+echo $SAMPLENAME " drawing $3 " samples
 
 mkdir $SAMPLENAME-out
 
@@ -31,5 +31,5 @@ awk -v SAMPLENAME=$SAMPLENAME '{totalSNPs+=$5; totalMatches+=$6; totallen+=$3} E
 
 cat $SAMPLENAME-matchsummary.txt;
 
-
-cat $SAMPLENAME-out/* | grep -v refSequence | tr [:lower:] [:upper:] | awk '{print $3 " " $4}' > $SAMPLENAME-final_sequences.txt
+echo "Homo_sapiens Solenodon_paradoxus" > $SAMPLENAME-final_sequences.txt
+cat $SAMPLENAME-out/* | grep -v refSequence | tr [:lower:] [:upper:] | awk '{print $3 " " $4}' >> $SAMPLENAME-final_sequences.txt
