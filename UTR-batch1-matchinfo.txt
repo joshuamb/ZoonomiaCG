@@ -1,0 +1,3 @@
+name chromosomes length genome SNPs aligned
+NM_144697_utr5_0_0_chr1_150282554_f chr1 714 Solenodon_paradoxus 156 475
+NR_153326_utr5_1_0_chr3_38496843_f chr3 87 Solenodon_paradoxus 0 0
