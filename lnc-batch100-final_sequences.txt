@@ -1,3 +1,4 @@
+Homo_sapiens Solenodon_paradoxus
 T T
 C C
 A A

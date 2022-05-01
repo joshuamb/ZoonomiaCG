@@ -1,3 +1,4 @@
 name chromosomes length genome SNPs aligned
 lnc-TCF7-5:5 chr5 3739 Solenodon_paradoxus 415 1459
-lnc-ZNF680-4:1 chr7 10642 
+lnc-ZNF680-4:1 chr7 10642 Solenodon_paradoxus 2248 7755
+lnc-C1D-5:1 chr2 63672 

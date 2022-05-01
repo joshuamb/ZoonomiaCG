@@ -2,4 +2,8 @@ name chromosomes length genome SNPs aligned
 NM_203383_utr5_10_0_chr11_506609_r chr11 160 Solenodon_paradoxus 0 0
 NM_004604_utr5_0_0_chr16_31033558_f chr16 248 NM_001362738_utr5_10_0_chr7_135205928_r chr7 131 Solenodon_paradoxus 0 0
 NM_130807_utr5_4_0_chr19_2096226_r chr19 101 Solenodon_paradoxus 0 0
-NM_001166243_utr5_8_0_chr3_61200617_r chr3 49 
+NM_001166243_utr5_8_0_chr3_61200617_r chr3 49 Solenodon_paradoxus 0 0
+NM_001304959_utr5_3_0_chr12_123944306_r chr12 59 Solenodon_paradoxus 0 0
+NM_001244190_utr5_1_0_chr14_58428272_f chr14 38 Solenodon_paradoxus 1 9
+NM_001384379_utr5_1_0_chr19_17754317_f chr19 150 Solenodon_paradoxus 0 0
+NM_001329521_utr5_2_0_chr19_37089039_f chr19 89 Solenodon_paradoxus 13 43
