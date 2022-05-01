@@ -1,2 +1,2 @@
 name chromosomes length genome SNPs aligned
-lnc-DRD3-1:1 chr3 13679 
+lnc-DISC1-1:2 chr1 68288 

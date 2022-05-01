@@ -23,7 +23,7 @@ echo "name chromosomes length genome SNPs aligned" > $SAMPLENAME-matchinfo.txt
 cat $SAMPLENAME-sample.txt | while read line;
 do set $line;
 echo -n "$1 $2 $4 " >> $SAMPLENAME-matchinfo.txt;
-halSnps --tsv "$SAMPLENAME-out/$2$1.tsv" --start $3 --length $4 241-mammalian-2020v2.hal Homo_sapiens Solenodon_paradoxus >> $SAMPLENAME-matchinfo.txt;
+halSnps --tsv "$SAMPLENAME-out/$2$1.tsv" --minSpeciesForSnp 0 --start $3 --length $4 241-mammalian-2020v2.hal Homo_sapiens Solenodon_paradoxus >> $SAMPLENAME-matchinfo.txt;
 done
 
 
@@ -32,4 +32,6 @@ awk -v SAMPLENAME=$SAMPLENAME '{totalSNPs+=$5; totalMatches+=$6; totallen+=$3} E
 cat $SAMPLENAME-matchsummary.txt;
 
 echo "Homo_sapiens Solenodon_paradoxus" > $SAMPLENAME-final_sequences.txt
-cat $SAMPLENAME-out/* | grep -v refSequence | tr [:lower:] [:upper:] | awk '{print $3 " " $4}' >> $SAMPLENAME-final_sequences.txt
+cat $SAMPLENAME-out/* | grep -v refSequence | tr [:lower:] [:upper:] | awk '{print $3 " " $4}' >> $SAMPLENAME-final_sequences_with_gaps.txt
+
+grep "\w \w" $SAMPLENAME-final_sequences_with_gaps.txt > $SAMPLENAME-final_sequences.txt
