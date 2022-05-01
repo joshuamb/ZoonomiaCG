@@ -1,0 +1,2 @@
+name chromosomes length genome SNPs aligned
+LINC01572:1 chr16 142872 LINC02541:41 chr6 32667 CCND2-AS1:4 chr12 26684 lnc-CD44-7:5 chr11 2878 lnc-CNTLN-1:2 chr9 2638 LINC01227:13 chr16 21700 

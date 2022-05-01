@@ -7,3 +7,4 @@ NM_001304959_utr5_3_0_chr12_123944306_r chr12 59 Solenodon_paradoxus 0 0
 NM_001244190_utr5_1_0_chr14_58428272_f chr14 38 Solenodon_paradoxus 1 9
 NM_001384379_utr5_1_0_chr19_17754317_f chr19 150 Solenodon_paradoxus 0 0
 NM_001329521_utr5_2_0_chr19_37089039_f chr19 89 Solenodon_paradoxus 13 43
+NR_045684_utr5_18_0_chr2_170402848_f chr2 148 Solenodon_paradoxus 34 131
