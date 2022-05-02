@@ -1,4 +1,4 @@
-Homo_sapiens 
+Homo_sapiens Nomascus_leucogenys 
 C C
 A A
 T T
