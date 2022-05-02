@@ -1,15 +1,16 @@
-A C
+Homo_sapiens Solenodon_paradoxus
+A 
 G A
 T T
 C C
 C C
 T T
 T T
-A 
-C 
-C 
-T 
-C 
+A A
+C C
+C G
+T G
+C G
 A 
 A 
 A 
