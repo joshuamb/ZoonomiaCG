@@ -32,7 +32,7 @@ A small example:
   ./script.sh lnc batch101 101 Solenodon_paradoxus && ./script.sh UTR batch10000 10000 Solenodon_paradoxus
 ```
   
-Note that this is a relatively minimal example but still takes significant time to run (up to an hour running both above commands in parallel on `t3.2xlarge` Amazon EC2 instance). It is considered relatively minimal because, despite their runtime, they produce relatively small sequences and smaller sampling of lncRNA and or 5'-UTR exons often produce no usable sequences at all. Note that while the number of random samples selected is specified above as 101 and 10000 many of these will contain no aligned sequences between the two species.
+To create the lightweight example presented here and in the report, the run was stopped after only 20 lncRNA and 202 5'-UTR exons. Note that this is a relatively minimal example but still takes significant time to run (up to an hour running both above commands in parallel on `t3.2xlarge` Amazon EC2 instance). It is considered relatively minimal because, despite the runtime, it still produces relatively small sequences. A smaller sampling of lncRNA or 5'-UTR exons often produces no usable sequences at all.
 
 ### Sequence Processing
 
@@ -60,10 +60,12 @@ Note that a description of every output file appears after these statistics.
   2,186 SNPs
 ```
   
-### File Explanations
-  - *matchinfo.txt contains the list of lncRNA or 5'-UTR exons that were used in that sample
-  - *final_sequences_with_gaps.txt contains the concatenated sequence of every H. sapiens lncRNA (or 5'-UTR exon) in one column with the aligned nucleotide of S. paradoxus in the second column; this contains many gaps where the H. sapiens sequence was not mapped to S. paradoxus
-  -*final_sequences.txt contains the same sequences as *final_sequences_with_gaps.txt but the non-aligned regions have been removed; these sequences are used in the final analysis
-
-
-Additional batches can be found in `additional_batches`. These also compare _Homo sapiens_ to _Solenodon paradoxus_ unless the batch name explicitly names another species, such as baboon or canerat. Scientific names can be found in the files themselves.
+### File Descriptions
+  - `*matchinfo.txt` contains the list of lncRNA or 5'-UTR exons that were successfully used in that sample along with more granular alignment information with columns: name of the lncRNA or 5'-UTR exon, chromosome, total sequence length alignable, SNPs found
+    - `*-sample.txt` contains all the lncRNA or 5'-UTR exons that were chosen as part of that random sample (many do not appear in `*matchinfo` because the sequence extraction was stopped after only 21 lncRNA and 202 5'-UTR to create this lightweight example).
+  - `*final_sequences_with_gaps.txt` contains the concatenated sequence of every H. sapiens lncRNA (or 5'-UTR exon) in one column with the aligned nucleotide of S. paradoxus in the second column; this contains many gaps where the H. sapiens sequence was not mapped to S. paradoxus
+  -`*final_sequences.txt` contains the same sequences as `*final_sequences_with_gaps.txt` but the non-aligned regions have been removed; these sequences are used in the final analysis
+  -'*-out` this folder contains the same alignment information as found in `*final_sequences_with_gaps.txt` but separated into one file per lncRNA or 5'-UTR exon.
+  
+### Additional Batches
+Additional batches can be found in `additional_batches`. These also compare _Homo sapiens_ to _Solenodon paradoxus_ unless the batch name explicitly names another species, such as baboon or canerat. Scientific names can be found in the files themselves. Note that many produced no usable (aligned) sequences.
