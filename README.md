@@ -54,6 +54,8 @@ The matrices produced by the example analysis given in this README are detailed 
 ## Output of Sequence Extraction Step
   
 ### File Descriptions
+Please note that the `*` in the below filenames refers to a standardized prefix prepended by `./script.sh` to all files produced by a particular analysis, typically including whether it is lncRNA or 5'-UTR, number of samples requested, and a user-customizable batch name (see description of `./script.sh`). An example filename in this format is `UTR-batch10000-final_sequences.txt` where the batch name has been specified as simply `batch`.
+
   - `*-sample.txt` contains all the lncRNA or 5'-UTR exons that were chosen as part of the random sample along with their start positions and lengths (RefSeq). For the example described in this README, not all sequences in this list were actually used as we stopped the sequece extraction step early to create our lightweight example.
   - `*matchinfo.txt` contains the list of lncRNA or 5'-UTR exons that were successfully used in that analysis along with their alignment statistics. Columns: name of the lncRNA or 5'-UTR exon, chromosome, total sequence length alignable, number of SNPs found.
   - `*-out` this folder contains the same alignment information as found in `*final_sequences_with_gaps.txt` but separated into one file per lncRNA or 5'-UTR exon.
@@ -65,14 +67,15 @@ The sequence data from the example referenced throughout this README (and used t
 
 #### lncRNA_batch_101
 
-  ```
+```
 20 lncRNA (see which ones in *matchinfo.txt)
 134,681 bp examined (count of lines in  *final_sequences_with_gaps.txt)
 28,668 aligned (count of lines in  *final_sequences.txt)
   20,463 exact matches
   8,205 SNPs
 ```
-  
+Sequence file used as input to sequence processing step:  `lnc-batch101-final_sequences.txt`
+
 #### UTR_batch_10000
 ```
 202 5'-UTR exons (see which ones in *matchinfo.txt)
@@ -81,6 +84,7 @@ The sequence data from the example referenced throughout this README (and used t
   5,300 exact matches
   2,186 SNPs
 ```
-  
+Sequence file used as input to sequence processing step:  `UTR-batch10000-final_sequences.txt`
+
 #### Additional Batches
 Additional runs of the sequence extraction process can be found in `additional_batches`. These were generally used in the testing process and to unofficially confirm that the example presented in this README and in the report is as representative as possible. Most of these batches also compare _Homo sapiens_ to _Solenodon paradoxus_ unless the batch name explicitly names another species, such as baboon or canerat. In that case, the scientific name of the target species can be found in the files themselves. Note that many of these runs produced no usable (aligned) sequences but are included here for the sake of completeness.
