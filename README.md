@@ -26,11 +26,11 @@ The analysis is split into two phases. The first, sequence extraction, produces 
 
 ### Sequence Extraction
 
-The main code for sequence extraction and preprocessing can be found in `script.sh`.
+The main code for sequence extraction and preprocessing can be found in `sequence_extract.sh`.
 
 ```bash
-usage: ./script.sh <UTR or lnc> <batch name> <number of samples> <target genome>
-eg: ./script.sh UTR batch101 101 Solenodon_paradoxus
+usage: ./sequence_extract.sh <UTR or lnc> <batch name> <number of samples> <target genome>
+eg: ./sequence_extract.sh UTR batch101 101 Solenodon_paradoxus
 ```
 This primarily uses `halSnps` from the toolkit above. The commands above should be run in a `bash` terminal in the same directory where the 804GB Hal alignment file is downloaded. The default alignment name `241-mammalian-2020v2.hal` should not be changed. The files `lnc.bed` and `utr.bed` should also be present in this directory to reproduce our results. Any valid BED files with these names can be substituted at this step for different analyses.
 
@@ -39,7 +39,7 @@ Note that this script will randomly select `<number of samples>` according to `b
 A small example:
   
 ```bash
-  ./script.sh lnc batch101 101 Solenodon_paradoxus && ./script.sh UTR batch10000 10000 Solenodon_paradoxus
+  ./sequence_extract.sh lnc batch101 101 Solenodon_paradoxus && ./sequence_extract.sh UTR batch10000 10000 Solenodon_paradoxus
 ```
   
 To create the lightweight example presented here and in the report, the run depicted above was stopped after only 20 lncRNA and 202 5'-UTR exons. Note that this is a relatively minimal example because it produces relatively small sequences for comparison and even smaller samples of lncRNA or 5'-UTR exons often produce no usable sequences at all. However, even this minimal example still takes significant time to run (up to an hour running both above commands in parallel on `t3.2xlarge` Amazon EC2 instance).
@@ -56,7 +56,7 @@ The matrices produced by the example analysis given in this README are detailed 
 ## Output of Sequence Extraction Step
   
 ### File Descriptions
-Please note that the `*` in the below filenames refers to a standardized prefix prepended by `./script.sh` to all files produced by a particular analysis, typically including whether it is lncRNA or 5'-UTR, number of samples requested, and a user-customizable batch name (see description of `./script.sh`). An example filename in this format is `UTR-batch10000-final_sequences.txt` where the batch name has been specified as simply `batch`.
+Please note that the `*` in the below filenames refers to a standardized prefix prepended by `./sequence_extract.sh` to all files produced by a particular analysis, typically including whether it is lncRNA or 5'-UTR, number of samples requested, and a user-customizable batch name (see description of `./sequence_extract.sh`). An example filename in this format is `UTR-batch10000-final_sequences.txt` where the batch name has been specified as simply `batch`.
 
   - `*-sample.txt` contains all the lncRNA or 5'-UTR exons that were chosen as part of the random sample along with their start positions and lengths (RefSeq). For the example described in this README, not all sequences in this list were actually used as we stopped the sequece extraction step early to create our lightweight example.
   - `*matchinfo.txt` contains the list of lncRNA or 5'-UTR exons that were successfully used in that analysis along with their alignment statistics. Columns: name of the lncRNA or 5'-UTR exon, chromosome, total sequence length alignable, number of SNPs found.
@@ -90,3 +90,6 @@ Sequence file used as input to sequence processing step:  `UTR-batch10000-final_
 
 #### Additional Batches
 Additional runs of the sequence extraction process can be found in `additional_batches`. These were generally used in the testing process and to unofficially confirm that the example presented in this README and in the report is as representative as possible. Most of these batches also compare _Homo sapiens_ to _Solenodon paradoxus_ unless the batch name explicitly names another species, such as baboon or canerat. In that case, the scientific name of the target species can be found in the files themselves. Note that many of these runs produced no usable (aligned) sequences but are included here for the sake of completeness.
+
+## Pointer to GitHub Repo
+https://github.com/joshuamb/ZoonomiaCG.git
