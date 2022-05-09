@@ -1,4 +1,6 @@
-# ZoonomiaCG
+# Nucleotide substitution rates are the same in 5'-UTR exons and lncRNAs for two distant members of the mammalian family tree: Supplementary Data and Code
+This is the supplementary data and code repository for the report _**Nucleotide substitution rates are the same in 5'-UTR exons and lncRNAs for two distant members of the mammalian family tree**_. It includes a detailed, lightweight example that reproduces the results presented in the report, provided as `report.pdf` for your convenience. The example and other explanations in this repository assume the reader is familiar with the report. In addition, slides from an oral presentation of this report are provided as `presentation.pdf`.
+
 ## Requirements
 - [ComparativeGenomicsToolkit (HAL)](https://github.com/ComparativeGenomicsToolkit/hal/blob/master/README.md)
 - Linux-like shell terminal environment capable of running `Bash`
