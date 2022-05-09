@@ -91,4 +91,5 @@ Sequence file used as input to sequence processing step:  `UTR-batch10000-final_
 #### Additional Batches
 Additional runs of the sequence extraction process can be found in `additional_batches`. These were generally used in the testing process and to unofficially confirm that the example presented in this README and in the report is as representative as possible. Most of these batches also compare _Homo sapiens_ to _Solenodon paradoxus_ unless the batch name explicitly names another species, such as baboon or canerat. In that case, the scientific name of the target species can be found in the files themselves. Note that many of these runs produced no usable (aligned) sequences but are included here for the sake of completeness.
 
-## Pointer to GitHub Repo: https://github.com/joshuamb/ZoonomiaCG.git
+## Pointer to GitHub Repo
+https://github.com/joshuamb/ZoonomiaCG.git
